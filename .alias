@@ -1,0 +1,22 @@
+# Useful Alias
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+alias ..="cd .."
+alias copy="tr -d '\n' | pbcopy"
+alias pwdc="pwd | copy"
+
+# Local Folders
+alias wpblog="cd /Users/prasanna/Documents/Personal/Blog/worldofprasanna.github.io"
+alias opensource="cd /Users/prasanna/Documents/Official/Code/OpenSource"
+
+# Pam specific
+alias lb=build_scripts/local_build.sh
+alias pam="cd /Users/prasanna/Documents/Official/Code/Pam"
+alias pamdocs="cd /Users/prasanna/Documents/Official/Project/pam"
+
+# NSM specific
+alias nsmdocs="cd /Users/prasanna/Documents/Official/Project/nsm"
+alias nsm="cd /Users/prasanna/Documents/Official/Code/nsm"
