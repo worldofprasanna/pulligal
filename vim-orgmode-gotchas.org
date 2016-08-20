@@ -1,0 +1,25 @@
+* Useful commands in vim-orgmode
+** Headers
+      1. *, **, etc for creating headings, sub headings
+      2. To continue headers, press <enter> in normal mode
+      3. >>, << to convert sub headers to headers or vice versa
+      4. <Tab> and <S-Tab> to fold headers
+      5. zm, zr to close the whole list
+** Checklist
+      1. To create checklist <localleader>cn
+      2. [ ] To continue press <enter> in normal mode
+      3. [X] To toggle status <localleader>cc
+** Use - TODOS
+      1. To create Todos start heading line with TODO text
+      2. To toggle status of TODO <localleader>ct
+** Timestamps
+      1. To add agenda timestamp to a todo or checklist, <localleader>sa
+      2. Default today s date can be changed by add +1 or sat etc.
+      Corresponding date will be noted down<2016-08-21 Sun>
+
+
+* TODO Have to start using the following:
+  - [ ] Export the content to PDF. For that have to configure emacs
+  - [ ] Generate agenda from the list
+  - [ ] Tag the todos and checklist
+  - [ ] Check the hyperlink features

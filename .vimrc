@@ -25,6 +25,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'jceb/vim-orgmode'
 
 call vundle#end()            " required
 
@@ -54,3 +55,6 @@ colorscheme jellybeans
 
 "Reload vimrc on pressing ,r in normal mode
 nnoremap rv :source $MYVIMRC<CR>
+
+" For vim-orgmode, Have to check and start using it
+" :let g:org_agenda_files=['~/org/index.org']
