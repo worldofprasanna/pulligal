@@ -1,1 +1,0 @@
-/Users/prasanna/.vimrc
