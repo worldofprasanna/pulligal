@@ -60,3 +60,8 @@ nnoremap rv :source $MYVIMRC<CR>
 
 " For vim-orgmode, Have to check and start using it
 " :let g:org_agenda_files=['~/org/index.org']
+
+" Use decimal formats only
+" <C-a> on 007 will increment to 008 and not octal value which is 010.
+" ref Practical Vim
+set nrformats=
