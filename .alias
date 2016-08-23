@@ -9,7 +9,7 @@ alias copy="tr -d '\n' | pbcopy"
 alias pwdc="pwd | copy"
 
 # Local Folders
-alias wpblog="cd /Users/prasanna/Documents/Personal/Writings/Blog/worldofprasanna.github.io"
+alias wpblog="cd /Users/prasanna/Documents/Personal/Writings/worldofprasanna.github.io"
 alias opensource="cd /Users/prasanna/Documents/Official/Code/OpenSource"
 alias mine="cd /Users/prasanna/Documents/Official/Code/own-projects"
 alias setup="cd /Users/prasanna/Documents/Official/Setup"
