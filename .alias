@@ -16,7 +16,7 @@ alias setup="cd /Users/prasanna/Documents/Official/Setup"
 alias learning="cd /Users/prasanna/Documents/Official/Learning"
 alias code="cd /Users/prasanna/Documents/Official/Code"
 alias tasks="cd /Users/prasanna/Documents/Official/Code/own-projects/daily-tasks"
-
+alias gaze="cd /Users/prasanna/Documents/Official/Code/gazematic"
 
 # Pam specific
 alias lb=build_scripts/local_build.sh
@@ -30,6 +30,7 @@ alias nsm="cd /Users/prasanna/Documents/Official/Code/nsm"
 # OFS specific
 alias ofsdocs="cd /Users/prasanna/Documents/Official/Project/ofs"
 alias ofs="cd /Users/prasanna/workspace"
+alias ofsd="cd /Users/prasanna/workspace/dev-environment"
 
 # Application
 alias idea="open -b com.jetbrains.intellij"
