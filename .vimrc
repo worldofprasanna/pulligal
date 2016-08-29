@@ -30,7 +30,7 @@ Plugin 'jceb/vim-orgmode'
 call vundle#end()            " required
 
 syntax enable
-filetype plugin indent on    " required
+filetype plugin indent off" required
 
 " Shift Enter will insert new line without going to insert mode
 nmap <S-Enter> O<Esc>
@@ -54,14 +54,15 @@ autocmd BufWritePre * StripWhitespace
 
 " Styling
 colorscheme jellybeans
+set cursorline
 
 "Reload vimrc on pressing ,rv in normal mode
-nnoremap rv :source $MYVIMRC<CR>
-
-" For vim-orgmode, Have to check and start using it
-" :let g:org_agenda_files=['~/org/index.org']
+nnoremap rv :w!<Esc>:source $MYVIMRC<CR>
 
 " Use decimal formats only
 " <C-a> on 007 will increment to 008 and not octal value which is 010.
 " ref Practical Vim
 set nrformats=
+
+" For vim-orgmode, Have to check and start using it
+" :let g:org_agenda_files=['~/org/index.org']
