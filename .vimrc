@@ -58,6 +58,7 @@ set cursorline
 
 "Reload vimrc on pressing ,rv in normal mode
 nnoremap rv :w!<Esc>:source $MYVIMRC<CR>
+nnoremap ev :e $MYVIMRC<CR>
 
 " Use decimal formats only
 " <C-a> on 007 will increment to 008 and not octal value which is 010.
