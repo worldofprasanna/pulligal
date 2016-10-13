@@ -35,6 +35,7 @@ alias ofsd="cd /Users/prasanna/workspace/dev-environment && vagrant ssh"
 # Application
 alias idea="open -b com.jetbrains.intellij"
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # Docker Alias
 alias drmdanglingimage='printf "\n >>> Clean Images:\n" && docker rmi $(docker images -q -f dangling=true)'

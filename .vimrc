@@ -67,3 +67,6 @@ set nrformats=
 
 " For vim-orgmode, Have to check and start using it
 " :let g:org_agenda_files=['~/org/index.org']
+
+" Temp map jj key to escape till seil issue is fixed
+inoremap jj <Esc>
