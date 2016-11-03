@@ -35,6 +35,9 @@ filetype plugin indent off" required
 
 " remap , to be the leader key
 " let maplocalleader=','
+"
+" Toggle Tagbar
+nmap <F12> :Tagbar<CR>
 
 " Shift Enter will insert new line without going to insert mode
 nmap <S-Enter> O<Esc>
