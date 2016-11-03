@@ -26,11 +26,15 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'jceb/vim-orgmode'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 
 syntax enable
 filetype plugin indent off" required
+
+" remap , to be the leader key
+" let maplocalleader=','
 
 " Shift Enter will insert new line without going to insert mode
 nmap <S-Enter> O<Esc>
@@ -69,4 +73,4 @@ set nrformats=
 " :let g:org_agenda_files=['~/org/index.org']
 
 " Temp map jj key to escape till seil issue is fixed
-inoremap jj <Esc>
+" inoremap jj <Esc>
