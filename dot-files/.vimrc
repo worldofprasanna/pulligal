@@ -38,6 +38,7 @@ filetype plugin indent off" required
 "
 " Toggle Tagbar
 nmap <F12> :Tagbar<CR>
+nmap <F10> :set rnu!<CR>
 
 " Shift Enter will insert new line without going to insert mode
 nmap <S-Enter> O<Esc>
