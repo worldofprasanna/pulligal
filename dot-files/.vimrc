@@ -27,6 +27,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'jceb/vim-orgmode'
 Plugin 'majutsushi/tagbar'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
+Plugin 'tpope/vim-speeddating'
 
 call vundle#end()            " required
 
@@ -78,3 +81,22 @@ set nrformats=
 
 " Temp map jj key to escape till seil issue is fixed
 " inoremap jj <Esc>
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+" The Silver Searcher
+ if executable('ag')
+   " Use ag over grep
+     set grepprg=ag\ --nogroup\ --nocolor
+
+   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+     let g:ctrlp_use_caching = 0
+ endif
+
+" bind \ (backward slash) to grep shortcut
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+" nnoremap \ :Ag<SPACE>
