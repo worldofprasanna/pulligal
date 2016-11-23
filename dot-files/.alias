@@ -33,6 +33,9 @@ alias ofsdocs="cd /Users/prasanna/Documents/Official/Project/ofs"
 alias ofs="cd /Users/prasanna/workspace"
 alias ofsd="cd /Users/prasanna/workspace/dev-environment && vagrant ssh"
 
+# BCG specific
+alias bcg="cd /Users/prasanna/Documents/Official/Code/bcg"
+
 # Application
 alias idea="open -b com.jetbrains.intellij"
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
