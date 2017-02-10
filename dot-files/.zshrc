@@ -132,7 +132,8 @@ function zle-line-init zle-keymap-select {
  export PATH="/usr/local/sbin:$PATH"
  export EDITOR=vi
 
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-
+# BCG specific variables
+export ASPOSE_HOME=/opt/aspose/
