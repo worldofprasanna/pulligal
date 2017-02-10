@@ -15,7 +15,7 @@ alias mine="cd /Users/prasanna/Documents/Official/Code/own-projects"
 alias setup="cd /Users/prasanna/Documents/Official/Setup"
 alias learning="cd /Users/prasanna/Documents/Official/Learning"
 alias code="cd /Users/prasanna/Documents/Official/Code"
-alias tasks="cd /Users/prasanna/Documents/Official/Code/own-projects/daily-tasks"
+alias tasks="cd /Users/prasanna/Documents/Official/Code/own-projects/daily-tasks; vim"
 alias gaze="cd /Users/prasanna/Documents/Official/Code/gazematic"
 alias sessions="cd /Users/prasanna/Documents/Personal/Writings/MySessions"
 
