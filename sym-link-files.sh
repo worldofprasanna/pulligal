@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files=( .ctags .tmux.conf .vimrc )
+files=( .ctags .tmux.conf .vimrc .zshrc )
 for f in "${files[@]}"
 do
 	rm "/Users/prasanna/$f"
