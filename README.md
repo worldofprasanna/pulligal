@@ -6,3 +6,7 @@ My Dot files and other helpers
 ```
 ln -s /Users/prasanna/Documents/Official/Code/own-projects/pulligal/.ctags /Users/prasanna/.ctags
 ```
+
+## Using lolcommits
+
+Whenever commit is successful in this repository, picture will be placed in ~/.lolcommits
