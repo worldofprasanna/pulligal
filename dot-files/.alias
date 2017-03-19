@@ -41,11 +41,13 @@ alias bcgdocs="cd /Users/prasanna/Documents/Official/Project/bcg"
 # Application
 alias idea="open -b com.jetbrains.intellij"
 alias pycharm="open -b com.jetbrains.pycharm"
+alias webstorm="open -b com.jetbrains.webstorm"
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # Yappay
 alias yap="/Users/prasanna/Documents/Official/Code/yappay"
+alias yapdocs="/Users/prasanna/Documents/Official/Project/yappay"
 
 # Docker Alias
 alias drmdanglingimage='printf "\n >>> Clean Images:\n" && docker rmi $(docker images -q -f dangling=true)'

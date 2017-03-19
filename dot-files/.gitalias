@@ -1,0 +1,25 @@
+# Useful git alias
+
+git config --global alias.commend 'commit --amend --no-edit'
+
+#$ git add Dockerfile
+#$ git commit -m ‘Update Bitbucket pipeline with new Docker image’
+## (facepalm)
+#$ git add bitbucket-pipelines.yml
+#$ git commend
+
+git config --global alias.it '!git init && git commit -m “root” --allow-empty'
+
+#$ cd shiny-new-thing
+#$ git it
+
+git config --global alias.stsh 'stash --keep-index'
+git config --global alias.staash 'stash --include-untracked'
+git config --global alias.staaash 'stash --all'
+
+#git stsh      # stash only unstaged changes to tracked files
+#git stash     # stash any changes to tracked files
+#git staash    # stash untracked and tracked files
+#git staaash   # stash ignored, untracked, and tracked files
+
+git config --global alias.shorty 'status --short --branch'

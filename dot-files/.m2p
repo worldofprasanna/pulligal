@@ -1,0 +1,243 @@
+
+# M2P Env variables
+export JAVA_HOME=/usr/lib/jvm/jre-1.8.0
+
+export JOBS_URL=http://localhost:9988
+export M2P_URL=http://localhost:6567/Yappay
+export JOBS_DB_PATH=jdbc:mysql://10.20.35.3/m2pjobs
+export JOBS_DB_USER=yappay
+export JOBS_DB_PASSWORD=yappay
+
+export WEBAPP_OUTPUT_FILEPATH=/appdata_local/m2pwebapp/output
+export AUTH_LOGIN_PATH=http://localhost:9966/uaa/auth/login
+export AUTH_BASE_URL=http://localhost:9966/uaa/
+export AUTH_DB_PATH=jdbc:mysql://10.20.35.3/auth
+export AUTH_DB_USER=yappay
+export AUTH_DB_PASSWORD=yappay
+export REPORTS_PATH=/appdata/m2preports
+export AUTH_JDBC_URL=jdbc:mysql://10.20.35.3/auth
+export AUTH_DB_USERNAME=yappay
+export AUTH_DB_PASSWORD=yappay
+
+export GATEWAY_PORT=6565
+export GATEWAY_MGMT_PORT=6560
+export GATEWAY_SERVICE_URL=http://localhost:6567
+
+export MAIN_JDBC_URL=jdbc:mysql://10.20.35.3/yap
+export MAIN_JDBC_USERNAME=yappay
+export MAIN_JDBC_PASSWORD=yappay
+export TENANT_DB=jdbc:mysql://10.20.35.3
+export TENANT_USER=yappay
+export TENANT_PWD=yappay
+
+export ICC_URL=http://202.54.157.184/wsiccmerchant/webservice.asmx/
+export ICC_MERCHANTID=72
+export ICC_TERMINALID=100072
+export ICC_LOGINKEY=9432734145
+export ICC_AGENTID=12345
+export ICC_TXNPROVIDERID=122
+
+export YSCI_APIPASSWD=hMf/gzaku9EHDBqYVosDw0UtEiTfTZRSoER16JYV1Cw
+export YSCI_APIUSERID=MTOPUSR1
+export YSCI_CHANNELTYPE=API
+export YSCI_CLIENTID=AIIMPS
+export YSCI_MSGREFNO=123456123456
+export YSCI_MSGTIMESTAMP=20130425022520
+export YSCI_ISSECURITYENABLED=true
+export YSCIURL=https://172.31.0.23/inbapiservices/services/NaradaApiService
+
+export MERCHANT_URL=http://localhost:6567/Yappay/
+
+export CYBERPLAT_KEYS_PATH=/appdata/cyberplatkeys_latest
+export USER_UPLOAD_FILE_PATH=/appdata_local/m2pwebapp/output
+
+export CLASSPATH=$CLASSPATH:/appdata/iprivpg/src/java/iprivpg.jar
+
+export M2P_URL=http://localhost:6567/Yappay/
+export MIN_TIME_TORETRY_MILLISECONDS=3600000
+export SMS_BALANCE_JDBC_URL=jdbc:mysql://10.20.35.3/yap
+export SMS_BALANCE_JDBC_USERNAME=yappay
+export SMS_BALANCE_JDBC_PASSWORD=yappay
+export IIFL_JDBC_URL=10.20.35.3/yappay
+export IIFL_JDBC_USERNAME=yappay
+export IIFL_JDBC_PASSWORD=yappay
+export IIFL_URL=http://localhost:6567/Yappay/
+
+#Added on 20151230
+export EBS_APIURL=https://api.secure.ebs.in/api/1_0
+export EBS_ACCOUNTID=17167
+export EBS_SECRETKEY=d61af908245570677c419ac765870c5d
+export SMS_IIFL_DISPLAY_NAME=IIFL
+export SMS_IKAAZ_DISPLAY_NAME=IKAAZ
+export TENANT_LOOKUP_180030020525=IKAAZ,ZINGCLUB,IIFL,SKS,MUTHOOT,YAPCUSTOMER,FULLERTON,M2P
+
+export PIGGY_FAILED_RC_LOOKUP_DAYS=290
+
+#Added on 20160101 for UAPA Setup
+export UAPA_LOOKUP_TENANT=M2P,PIGGY,YAPCUSTOMER,IKAAZ,BAJAJ,MMFL
+
+#Added on 20160106 for Latest WebApp release
+export SKS_ENTITYID=SKS
+export IIFL_ENTITYID=IIFLMER
+export MADURA_ENTITYID=MMFL
+export IKAAZ_ENTITYID=IKAAZ
+export BAJAJ_ENTITYID=BAJAJ
+
+export IIFL_REPORT_FILE=/appdata_local/m2pwebapp/jasper_config/IIFL.jrxml
+export SKS_REPORT_FILE=/appdata_local/m2pwebapp/jasper_config/SKS.jrxml
+export MADURA_REPORT_FILE=/appdata_local/m2pwebapp/jasper_config/MMFL.jrxml
+export IKAAZ_REPORT_FILE=/appdata_local/m2pwebapp/jasper_config/IKAAZ.jrxml
+export BAJAJ_REPORT_FILE=/appdata_local/m2pwebapp/jasper_config/BAJAJ.jrxml
+
+export DCBGIFT_REPORT_FILE=/appdata_local/m2pwebapp/jasper_config/DCBGIFT.jrxml
+export DCB_ENTITYID=DCBGIFT
+export ZINGCLUB_REPORT_FILE=/appdata_local/m2pwebapp/jasper_config/ZINGCLUB.jrxml
+export ZINGCLUB_ENTITYID=ZINGCLUB
+
+
+export UAPA_EXCEL_FILE_PATH=/appdata_local/uapa/UNC.xls
+export UAPA_XML_FILE_PATH=/appdata_local/m2pwebapp/jasper_config/consolidated.xml
+
+export PIGGY_PG_MERCHANT_ID=PGPIGGY01
+export PIGGY_FAILED_PG_LOOKUP_DAYS=200
+
+#Added on 20160120 for IIFL Failed SMS
+export IIFL_NOTIF_URL=http://localhost:6567/Yappay/notification-manager/yse-txn-update
+export SKS_NOTIF_URL=http://localhost:6567/Yappay/notification-manager/yse-txn-update
+export NEWARCH_NOTIF_URL=http://localhost:6567/Yappay/notification-manager/yse-txn-update
+export TXN_DATE=2015-06-01
+export TXN_DATE2=2016-01-23
+export TXN_ENDPOINT=txn-manager/create
+export FETCHBALANCE_ENDPOINT=business-entity-manager/fetchbalance/
+export SETTLEMENT_PAYOUT_MERCHANT_ID=MERCHANTPAYOUTS
+export SETTLEMENT_FEE_MERCHANT_ID=MERCHANTFEES
+export SETTLEMENT_REPORTS_PATH=/appdata/m2preports/settlementreports
+
+export MERCHANT_KYC_FILEPATH=/appdata/m2preports/kyc
+export MERCHANT_APP_URL=http://localhost:6567
+export WEB_NOTIFY_CC_ADDRESS=senthil@m2p.in,muthu@m2p.in,prabhu@m2p.in,jayanthi@m2p.in,lekhaa@m2p.in,govind@m2p.in,madhu@m2p.in
+export MERCHANT_JDBC_URL=jdbc:mysql://10.20.35.3:3306/MERCHANT
+export OFFER_DB_URL=jdbc:mysql://10.20.35.3
+export CASHBACK_ENGINE_URL=http://localhost:9944/
+export SMS_ZINGCLUB_DISPLAY_NAME=ZINGCLUB
+
+
+export RC_BATCH_JDBC_URL=jdbc:mysql://10.20.35.3
+export RC_BATCH_JDBC_USER=yappay
+export RC_BATCH_JDBC_PWD=yappay
+export TXN_SEARCH_JASPER=/appdata/m2preports/TNX_REPORT.jrxml
+export SEARCH_TNX_REPORT=/appdata/m2preports/TNX_REPORT.jrxml
+#Added by Prabhu on 20160427
+export YAP_LOGO=/appdata/yap_icon.png
+
+
+#Added by Prabhu on 20160427
+export YAP_LOGO=/appdata/yap_icon.png
+
+
+export PIGGY_RC_MERCHANT=RECHARGE01
+export PIGGY_RC_YAPCODE=1234
+
+
+export DCBWALLET_RC_YAPCODE=1234
+export DCBWALLET_RC_MERCHANT=DCBWALLETRECHARGE01
+
+
+export KYC_APP_URL=http://localhost/
+
+
+export MERCHANT_DBNAME=MERCHANT
+
+export TXN_DATE=2016-06-01
+
+export TXN_DATE2=2016-06-08
+
+## Just giving dummy location needs to give proper when we go with pdf report
+export MERCHANT_SETTLEMENT_REPORT=/appdata_local/m2pwebapp/jasper_config/consolidated.xml
+
+
+export NEFT_REPORT_JASPER=/appdata_local/m2pwebapp/jasper_config/consolidated.xml
+
+
+export EMAIL_USERNAME=connect@m2p.in
+export EMAIL_PASSWORD=m2pconnect
+
+export NOTIFICATION_ENGINE_URL=http://localhost:9956/notification/
+
+export IMPS_MERCHANT_ID=IMPSMERCHANT
+export IMPS_SERVICE_MERCHANT_ID=IMPSSERVICEMERCHANT
+export GATEWAY_MER_APP_URL=HTTP://localhost:6567/
+
+export MERCHANTAPP_URL=http://localhost:6567/merchant/
+
+
+export SETTLEMENT_WALLET_ID=176
+export FEE_WALLET_ID=174
+
+export LOG_DIR=/appdata/yscilog
+export AES_KEY_VERSION=1
+
+
+################### MVISA and VISADIRECT #################
+
+export ACQUIRER_BIN=455242
+export MVISA_API_PWD=ge4rl62JwSWvc8zuJ2Q0bbW9ImFVFT4036Cps32
+export MVISA_API_USERID=0K0ELW96IQ08T8EU1SYD21R-7tX2k9SuT2OHAsTElvXaXy9ZE
+
+export MVISA_KEYSTORE_PATH=/appdata_local/visadirect/mvisa_prod_live_new.jks
+export MVISA_KEYSTORE_PWD='$Kumar143'
+export MVISA_PRIVATEKEY_PWD='$Kumar143'
+export MVISA_PUSH_GET_URL=1212
+export MVISA_PUSH_POST_URL=https://api.visa.com/visadirect/mvisa/v1/merchantpushpayments
+
+export MVISA_URL=https://api.visa.com/visadirect/mvisa/v1/merchantpushpayments
+export VISADIRECT_DB_URL=${TENANT_DB}
+export VISADIRECT_KEYSTORE_PATH=/appdata_local/visadirect/mvisa_prod_live_new.jks
+export VISADIRECT_KEYSTORE_PRIVATE_PWD='$Kumar143'
+export VISADIRECT_KEYSTORE_PWD='$Java143'
+export VISA_DIRECT_API_PWD=8mZ2x90t5m5IyyYsV
+export VISA_DIRECT_API_USER=6MYNVY650OM4B6GKLX8D21T8mzoO-wtLHhEaVGNkf8B3oz2Us
+export VISA_DIRECT_API_USERID=6MYNVY650OM4B6GKLX8D21T8mzoO-wtLHhEaVGNkf8B3oz2Us
+export VISA_DIRECT_PUSH_POST_URL=https://api.visa.com/visadirect/mvisa/v1/merchantpushpayments
+export VISA_PUSH_GET_URL==https://api.visa.com/visadirect/mvisa/v1/merchantpushpayments
+
+export DECRYPT_SERVICE_URL=http://52.66.83.52:9977/decryptkey/
+export EXTERNAL_TXN_NOTALLOWABLE_PRODUCTS=M2P201,M2P301
+export GENERAL_WALLET_OTP_DISABLEDTENANT=YAPCUSTOMER
+
+
+export PUBLIC_KEY_FILEPATH=/appdata/cert/m2psolutions_pub.der
+export PRIVATE_KEY_FILEPATH=/appdata/cert/m2psolutions_pvt.pkcs8
+export GATEWAY_URL=http://m2p.yappay.in:6565/Yappay/
+
+
+
+export TXN_SUMMARY_PATH=/appdata/m2preports/txn_summary/
+
+export NEFT_REPORTS_PATH=/appdata/m2preports/neft/
+
+
+export JASPER_SETTLEMENT_TEMPLATE=/appdata/m2preports/JASPER_TEMPLATE/MERCHANT-SETTLEMENT-REPORT.jrxml
+
+export MERCHANT_SMS_NOTITICATION=10216,10195,10205,10181,10108
+export VISADIRECT_URL=http://localhost:9922/visa-direct/
+
+
+export MVISA_ACTIONCODE=00
+export MVISA_RESPONSECODE=5
+
+
+
+export UPI_JDBC_URL=jdbc:mysql://10.20.35.3:3306/UPI
+
+export UPI_DB_NAME=UPI
+export UPI_JDBC_PASSWORD=yappay
+
+export KIT_DECRYPT_TURN_OFF=ON
+export KIT_DECRYPT_TURN_ON_OFF=ON
+
+
+export ISSUER_SERVER_PORT=3363
+export ISSUER_CLIENT_PORT=3364
+export ISSUER_CLIENT_ADDRESS=localhost
+export ISSUER_SERVER_ADDRESS=localhost

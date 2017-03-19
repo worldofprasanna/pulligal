@@ -99,6 +99,8 @@ export PATH=./node_modules/.bin:$PATH
 
 eval "$(hub alias -s)"
 source /Users/prasanna/Documents/Official/Code/own-projects/pulligal/dot-files/.alias
+#source /Users/prasanna/Documents/Official/Code/own-projects/pulligal/dot-files/.m2p
+source /Users/prasanna/Documents/Official/Code/own-projects/pulligal/dot-files/.gitalias
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
