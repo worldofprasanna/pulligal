@@ -4,6 +4,7 @@ set nocompatible              " be iMproved, required
 set hlsearch
 set rnu
 set number
+set ff=unix
 
 set rtp+=~/.vim/bundle/Vundle.vim
 

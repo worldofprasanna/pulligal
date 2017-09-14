@@ -139,3 +139,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # BCG specific variables
 export ASPOSE_HOME=/opt/aspose/
+
+# Docker Version Manager
+export DVM_DIR="/usr/local/Cellar/dvm/0.8.2"
+#[[ -r $DVM_DIR/bash_completion ]] && . $DVM_DIR/bash_completion
+source /usr/local/Cellar/dvm/0.8.2/dvm.sh
