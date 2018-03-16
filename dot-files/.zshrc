@@ -155,3 +155,5 @@ if [ -f '/Users/prasanna/google-cloud-sdk/completion.zsh.inc' ]; then source '/U
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 source /usr/local/Cellar/autojump/22.5.1/etc/autojump.sh
+
+[ -f ~/.kube-fzf/kube-fzf.sh ] && source ~/.kube-fzf/kube-fzf.sh
