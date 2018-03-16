@@ -1,4 +1,6 @@
 source ~/.bash_profile
+source ~/.functions
+
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
@@ -6,3 +8,7 @@ source ~/.bash_profile
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
+
+export CDPATH=.:~:/Users/prasanna/Documents/Official/Code/bcg
+
+complete -C /usr/local/bin/vault vault

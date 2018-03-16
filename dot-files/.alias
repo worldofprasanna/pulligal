@@ -46,11 +46,14 @@ alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # Yappay
-alias yap="/Users/prasanna/Documents/Official/Code/yappay"
-alias yapdocs="/Users/prasanna/Documents/Official/Project/yappay"
+alias yap="cd /Users/prasanna/Documents/Official/Code/yappay"
+alias yapdocs="cd /Users/prasanna/Documents/Official/Project/yappay"
 
 # Docker Alias
 alias drmdanglingimage='printf "\n >>> Clean Images:\n" && docker rmi $(docker images -q -f dangling=true)'
 alias drmcontainer='printf "\n >>> Remove stopped containers:\n" && docker rm $(docker ps -qa)'
 alias dkillcontainer='printf "\n >>> Kill containers:\n" && docker kill $(docker ps -q)'
 alias dkillrmcontainer='dkillcontainer || true && drmcontainer'
+
+# Golang working directory <GOPATH>
+alias goplay='cd /Users/prasanna/Documents/Official/Code/golang/src'

@@ -49,7 +49,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails)
+plugins=(git)
 
 # User configuration
 
@@ -131,7 +131,8 @@ function zle-line-init zle-keymap-select {
 
  export LC_ALL=en_US.UTF-8
  export LANG=en_US.UTF-8
- export PATH="/usr/local/sbin:$PATH"
+ export GOPATH=/Users/prasanna/Documents/Official/Code/golang/
+ export PATH="/usr/local/sbin:$PATH:$GOPATH/bin"
  export EDITOR=vi
 
 export NVM_DIR="$HOME/.nvm"
@@ -144,3 +145,13 @@ export ASPOSE_HOME=/opt/aspose/
 export DVM_DIR="/usr/local/Cellar/dvm/0.8.2"
 #[[ -r $DVM_DIR/bash_completion ]] && . $DVM_DIR/bash_completion
 source /usr/local/Cellar/dvm/0.8.2/dvm.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/prasanna/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/prasanna/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/prasanna/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/prasanna/google-cloud-sdk/completion.zsh.inc'; fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
+source /usr/local/Cellar/autojump/22.5.1/etc/autojump.sh
