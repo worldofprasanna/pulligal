@@ -31,6 +31,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-speeddating'
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 
