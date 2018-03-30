@@ -159,3 +159,5 @@ source /usr/local/Cellar/autojump/22.5.1/etc/autojump.sh
 [ -f ~/.kube-fzf/kube-fzf.sh ] && source ~/.kube-fzf/kube-fzf.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_OPTS="--preview 'cat {}'"
