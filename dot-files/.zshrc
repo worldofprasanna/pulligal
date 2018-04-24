@@ -104,7 +104,6 @@ source /Users/prasanna/Documents/Official/Code/own-projects/pulligal/dot-files/.
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
 
 # Make vi default editor, vi related settings
 # http://unix.stackexchange.com/questions/44115/how-do-i-perform-a-reverse-history-search-in-zshs-vi-mode/273672#273672?newreg=26e81cf912814bd590410b408c30851a
@@ -132,7 +131,8 @@ function zle-line-init zle-keymap-select {
  export LC_ALL=en_US.UTF-8
  export LANG=en_US.UTF-8
  export GOPATH=/Users/prasanna/Documents/Official/Code/golang/
- export PATH="/usr/local/sbin:$PATH:$GOPATH/bin"
+ export CLICK_PATH=/Users/prasanna/.cargo/bin
+ export PATH="/usr/local/sbin:$PATH:$GOPATH/bin:$CLICK_PATH"
  export EDITOR=vi
 
 export NVM_DIR="$HOME/.nvm"

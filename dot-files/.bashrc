@@ -7,7 +7,6 @@ source ~/.functions
 #
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
 
 export CDPATH=.:~:/Users/prasanna/Documents/Official/Code/bcg
 
