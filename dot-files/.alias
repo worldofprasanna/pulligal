@@ -8,46 +8,55 @@ alias ..="cd .."
 alias copy="tr -d '\n' | pbcopy"
 alias pwdc="pwd | copy"
 
+BASE_PATH=$(echo ~)/Documents
+
 # Local Folders
-alias wpblog="cd /Users/prasanna/Documents/Personal/Writings/worldofprasanna.github.io"
-alias opensource="cd /Users/prasanna/Documents/Official/Code/OpenSource"
-alias mine="cd /Users/prasanna/Documents/Official/Code/own-projects"
-alias setup="cd /Users/prasanna/Documents/Official/Setup"
-alias learning="cd /Users/prasanna/Documents/Official/Learning"
-alias code="cd /Users/prasanna/Documents/Official/Code"
-alias tasks="cd /Users/prasanna/Documents/Official/Code/own-projects/daily-tasks; vim"
-alias gaze="cd /Users/prasanna/Documents/Official/Code/gazematic"
-alias sessions="cd /Users/prasanna/Documents/Personal/Writings/MySessions"
+alias wpblog="cd $BASE_PATH/Personal/Writings/worldofprasanna.github.io"
+alias opensource="cd $BASE_PATH/Official/Code/open-source"
+alias mine="cd $BASE_PATH/Official/Code/own-projects"
+alias setup="cd $BASE_PATH/Official/Setup"
+alias learning="cd $BASE_PATH/Official/Learning"
+alias mycode="cd $BASE_PATH/Official/Code"
+alias tasks="cd $BASE_PATH/Official/Code/own-projects/daily-tasks; vim"
+alias gaze="cd $BASE_PATH/Official/Code/gazematic"
+alias sessions="cd $BASE_PATH/Personal/Writings/MySessions"
+alias talks="cd $BASE_PATH/Official/Talks/"
 
 # Pam specific
 alias lb=build_scripts/local_build.sh
-alias pam="cd /Users/prasanna/Documents/Official/Code/Pam"
-alias pamdocs="cd /Users/prasanna/Documents/Official/Project/pam"
+alias pam="cd $BASE_PATH/Official/Code/Pam"
+alias pamdocs="cd $BASE_PATH/Official/Project/pam"
 
 # NSM specific
-alias nsmdocs="cd /Users/prasanna/Documents/Official/Project/nsm"
-alias nsm="cd /Users/prasanna/Documents/Official/Code/nsm"
+alias nsmdocs="cd $BASE_PATH/Official/Project/nsm"
+alias nsm="cd $BASE_PATH/Official/Code/nsm"
 
 # OFS specific
-alias ofsdocs="cd /Users/prasanna/Documents/Official/Project/ofs"
-alias ofs="cd /Users/prasanna/workspace"
-alias ofsd="cd /Users/prasanna/workspace/dev-environment && vagrant ssh"
+alias ofsdocs="cd $BASE_PATH/Official/Project/ofs"
+alias ofs="cd $BASE_PATH/workspace"
+alias ofsd="cd $BASE_PATH/workspace/dev-environment && vagrant ssh"
 
 # BCG specific
-alias bcg="cd /Users/prasanna/Documents/Official/Code/bcg"
-alias bcgnotes="cd /Users/prasanna/Documents/Official/Code/bcg/docs/notes; vim"
-alias bcgdocs="cd /Users/prasanna/Documents/Official/Project/bcg"
+alias bcg="cd $BASE_PATH/Official/Code/bcg"
+alias bcgnotes="cd $BASE_PATH/Official/Code/bcg/docs/notes; vim"
+alias bcgdocs="cd $BASE_PATH/Official/Project/bcg"
 
 # Application
 alias idea="open -b com.jetbrains.intellij"
 alias pycharm="open -b com.jetbrains.pycharm"
 alias webstorm="open -b com.jetbrains.webstorm"
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias goland="open -b com.jetbrains.goland"
+#alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+#alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # Yappay
-alias yap="cd /Users/prasanna/Documents/Official/Code/yappay"
-alias yapdocs="cd /Users/prasanna/Documents/Official/Project/yappay"
+alias yap="cd $BASE_PATH/Official/Code/yappay"
+alias yapdocs="cd $BASE_PATH/Official/Project/yappay"
+
+# Openbank
+alias openbank="cd $BASE_PATH/Official/Code/openbank"
+alias openbankdocs="cd $BASE_PATH/Official/project-docs/openbank"
+alias ssm='aws ssm get-parameters-by-path --path /config/$(basename `pwd`)_dev --recursive --with-decryption | jq -r '\''.Parameters[] | "\(.Name) : \(.Value)"'\'' | fzf'
 
 # Docker Alias
 alias drmdanglingimage='printf "\n >>> Clean Images:\n" && docker rmi $(docker images -q -f dangling=true)'
@@ -56,4 +65,10 @@ alias dkillcontainer='printf "\n >>> Kill containers:\n" && docker kill $(docker
 alias dkillrmcontainer='dkillcontainer || true && drmcontainer'
 
 # Golang working directory <GOPATH>
-alias goplay='cd /Users/prasanna/Documents/Official/Code/golang/src'
+alias goplay="cd $BASE_PATH/Official/Code/golang/src"
+alias go=richgo
+
+# Office projects
+alias op="cd $BASE_PATH/Official/Code/office-projects"
+alias opdocs="cd $BASE_PATH/Official/project-docs/office-projects"
+
