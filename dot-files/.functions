@@ -6,3 +6,8 @@ echo "\"\$$#\""
 # mkdir -p "$@" && cd "$@";
 mkdir -p "$@" && eval cd "\"\$$#\"";
 }
+
+function pwdc() {
+echo 'Copying the current directory path'
+`pwd | pbcopy`
+}

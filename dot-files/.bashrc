@@ -12,4 +12,4 @@ export CDPATH=.:~:/Users/prasanna/Documents/Official/Code/bcg
 
 complete -C /usr/local/bin/vault vault
 
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
