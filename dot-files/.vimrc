@@ -5,6 +5,10 @@ set hlsearch
 set rnu
 set number
 set ff=unix
+set guioptions+=a
+
+set encoding=utf8
+set guifont=Monaco:h18
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -17,7 +21,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/ZoomWin'
@@ -28,9 +31,18 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'jceb/vim-orgmode'
 Plugin 'majutsushi/tagbar'
-Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-speeddating'
+Plugin 'tommcdo/vim-exchange'
+Plugin 'tpope/vim-dispatch'
+" Snippets
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+" Vuejs
+Plugin 'posva/vim-vue'
+" Golang
 Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
@@ -100,5 +112,10 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
  endif
 
 " bind \ (backward slash) to grep shortcut
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+" command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 " nnoremap \ :Ag<SPACE>
+
+" vim-go bindings
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
