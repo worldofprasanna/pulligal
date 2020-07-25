@@ -1,0 +1,14 @@
+function mkdircd() {
+# can fetch all the arguments
+# echo "$@"
+# can fetch the first argument
+# echo "\"\$$#\""
+# mkdir -p "$@" && cd "$@";
+mkdir -p "$@" && eval cd "\"\$$#\"";
+}
+
+function pwdc() {
+echo 'Copying the current directory path'
+`pwd | pbcopy`
+}
+

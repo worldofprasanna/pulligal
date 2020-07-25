@@ -1,0 +1,11 @@
+# Useful Alias
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+alias ..="cd .."
+alias copy="tr -d '\n' | pbcopy"
+alias pwdc="pwd | copy"
+alias jsoncheck='jq "." >/dev/null <'
+
